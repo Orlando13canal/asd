@@ -1,0 +1,88 @@
+
+body {
+    --preto: #73a730;
+    --azul-marinho: #2d6073;
+    --azul: #00a8c6;
+    margin: 0;
+    background-color: #f1f0ee;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+    background-color: var(--preto);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-link:hover {
+    color: var(--azul);
+    border-bottom: 1px solid var(--azul);
+}
+
+.container {
+    width: 50%;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: white;
+}
+
+.btn-success {
+    background-color: #28a745;
+    color: white;
+}
+
+.btn-outline-light {
+    border: 1px solid white;
+    color: white;
+}
+
+.btn-outline-light:hover {
+    background-color: white;
+    color: var(--preto);
+}
+
+.card-header {
+    background-color: var(--azul-marinho);
+    color: white;
+    padding: 10px;
+    border-radius: 10px 10px 0 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+}

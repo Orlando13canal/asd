@@ -1,0 +1,120 @@
+body {
+    /* Variaveis para armazenar os valores das cores */
+    --preto: #0b6be9;
+    --azul-marinho: #2d6073;
+    --azul: #00a8c6;
+    /* Variaveis para armazenar os valores das cores */
+    margin: 2; /* Remove as margens padrão */
+    background-color: #f1f0ee; /* Definir cor de fundo */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Algumas fontes de texto */
+}
+
+.navbar {
+    background-color: var(--preto); /* Define a cor preta no fundo, usando a variavel */
+    display: -webkit-flex; /* Define um layout flexbox */
+    justify-content: space-between; /* Distribui os espaços entre os itens */
+    padding: 0px 0px; /* Define os espaçamentos internos (faça testes e veja quais padding está buscando e como adicionar mais) */
+    align-items: center; /* Centralizar itens*/
+    
+}
+
+.navbar-brand, .nav-link {
+    color: white; /* Definir cor branca no texto */
+    text-decoration: none; /* Remoção sublinhado dos links */
+    padding: 15px; /* Define espaçamento interno em todos os lados */
+
+}   
+
+.nav-link:hover {
+    color: var(--Black); /* Muda a cor do texto para azul quando o mouse estiver sobre o Link */
+    border-bottom: 1px solid var(--Black); /* Definir borda inferior azul (solido)  */
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.form-control {
+    padding: 8px;
+    margin-right: 10px; /* Definir margem a direita */
+    border: 5px solid #ccc; /* Definir borda cinza (solida) */
+    border-radius: 4px; /* Definir cantos arredondados */
+}
+
+.btn {
+    padding: 8px 16px; /* Definir espaçamento interno */
+    background-color: var(--preto); /* Cor de fundo preta */
+    border: none; /* Definir botao sem borda */
+    color: white; /* Definir texto branco */
+    border-radius: 4px; /* Definir cantos arredondados */
+    cursor: pointer; /* Definir um estilo para o cursor, nesse caso (ponteiro) */
+}
+
+.btn-outline-light {
+    background: transparent; /* Definir fundo transparente */
+    border-color: white; /* Definir borda clara (branca) */
+}
+
+.btn-outline-light:hover {
+    background-color: white; /* Muda o fundo para branco ao passar o mouse */
+    color: var(--preto); /* Define o texo para preto */
+}
+
+.banner {
+    background-image: url(https://res.cloudinary.com/worldpackers/image/upload/c_fill,f_auto,q_auto,w_1024/v1/guides/article_cover/ucwwawsxolkedn2xceif); /* Definir imagem de fundo */
+    background-size: cover; /* Imagem vai cobrir todo o espaço */
+    background-repeat: no-repeat; /* Não deixa repetir a imagem */
+    background-attachment: fixed; /* Imagem vai ficar fixa quando rolar a pagina */
+    height: 500px; /*Definir altura do banner */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.container-eventos {
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);  /* Definir posição da sobra + intensidade (Faça testes para ver o comportamento dela)*/
+    padding: 30px;
+    margin: 20px auto;
+    width: 30%;
+}
+
+.card {
+    background: transparent;
+    border: none; 
+    margin-bottom: 20px;
+}
+
+.img-evento {
+    height: 300px;
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+footer {
+    background-color: var(--preto);
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 768px) { /* Usado para deixar mais responsivo conforme a resolução */
+    .banner {
+        height: 250px;
+        background-attachment: scroll;
+    }
+}
+.logo{
+    width: 100px;
+}
